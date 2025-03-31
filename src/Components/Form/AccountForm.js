@@ -19,7 +19,6 @@ const AccountForm = () => {
     const [isSignupVisible, setIsSignupVisible] = useState(false);
 
 
-    // Signup-form visibility toggling
     const handleIsSignupVisible = () => {
         setIsSignupVisible(prevState => !prevState);
     };
@@ -33,7 +32,6 @@ const AccountForm = () => {
                         <div className="modal_centered">
                             <form id="account_form" ref={formRef} onSubmit={handleFormSubmit}>
 
-                                {/*===== Form-Header =====*/}
                                 <div className="form_head">
                                     <h2>{isSignupVisible ? 'Signup' : 'Login'}</h2>
                                     <p>
@@ -45,7 +43,6 @@ const AccountForm = () => {
                                     </p>
                                 </div>
 
-                                {/*===== Form-Body =====*/}
                                 <div className="form_body">
                                     {
                                         isSignupVisible && (
@@ -112,7 +109,6 @@ const AccountForm = () => {
 
                                 </div>
 
-                                {/*===== Form-Footer =====*/}
                                 <div className="form_foot">
                                     <p>or login with</p>
                                     <div className="login_options">
@@ -122,7 +118,6 @@ const AccountForm = () => {
                                     </div>
                                 </div>
 
-                                {/*===== Form-Close-Btn =====*/}
                                 <div
                                     className="close_btn"
                                     title="Close"
